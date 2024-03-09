@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header><div class="header">
+      <div class="logo"><b>Window</b>Gold</div>
+    <div class="contenidos">
+      <div class="puntos"><a href="/escritorio">Escritorio</a></div>
+      <div class="puntos  mas"><a href="#">Productos</a></div>
+      <div class="sub_puntos"><a href="/catalogo">catalogo</a></div>
+      <div class="sub_puntos"><a href="/articulos">articulos</a></div>
+      <div class="sub_puntos"><a href="/marcas">marcas</a></div>
+      <div class="puntos"><a href="/compras">compras</a></div>
+      <div class="puntos"><a href="/ventas">ventas</a></div>
+      <div class="puntos"><a href="/perfil">perfil</a></div>
+    </div>
+  </div>
+  
+
+</div></header>
+    <main>
+      <!--  este es el codigo para implementar luego el ciculo del usuario y la pantalla modal de perfil y cerrar sesion 
+      
+         <div class="barra">
+        <div id="fondoModal" style="display: none;"></div>
+        <div class="usuario">
+          <div class="avatar">
+            <img src="ruta_a_tu_imagen_de_avatar.jpg" alt="Avatar del usuario">
+          </div>
+          <div class="nombre">Usuario</div>
+        </div>
+        <div id="ventanaEmergente" style="display: none;">
+       
+          <div class="opciones">
+            <a href="#">Perfil</a>
+            <a href="#">Cerrar sesión</a>
+          </div>
+          <button id="cerrarVentana">Cerrar</button>
+        </div>
+      </div>
+     
+      -->
+     
+      <div class="barra"> 
+        <!--<div class="usuario" onclick="openModal()">Usuario</div>-->
+
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-conten">
+          <span class="clos" onclick="closeModal()">&times;</span>
+          <p><a href="#">Perfil</a></p>
+          <p><a href="#">Cerrar Sesión</a></p>
+        </div>
+      </div>
+      <div class="busquedaYAgregar">
+        
+        <button class="button">Crear categoria</button>
+      </div>
+      <div class="main">
+        <table id="table">
+          
+            <thead>
+                <th>Categoria</th>
+                <th>Cantidad de productos </th>
+                <th>estado</th>
+                <th>Accion</th>
+            </thead>
+            <tbody>
+              <!-- Aquí se agregarán las filas de la tabla -->
+          </tbody>
+       
+
+        
+        </table>
+      
+      
+
+    </div>
+    </main>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+         <span class="close">&times;</span>
+         <form id="categoryForm">
+          <label for="fname">Nombre de la categoría:</label>
+          <input type="text" id="fname" name="fname" required>
+          <label for="status">Estado:</label>
+          <select id="status" name="status" required>
+             <option value="">Seleccione...</option>
+             <option value="activo">Activo</option>
+             <option value="inactivo">Inactivo</option>
+          </select>
+          <button type="submit" class="button-confirm" style="color:#fff;" >Guardar</button>
+          
+         </form>
+      </div>
+     </div>
+  <script type="module" src="./index.js"></script>
+  <script  type="module" src="./API.js"></script>
+</body>
+</html>
