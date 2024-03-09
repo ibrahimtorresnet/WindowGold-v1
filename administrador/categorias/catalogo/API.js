@@ -1,6 +1,6 @@
 export function sendCategoryToServer(categoryData) {
    // Asegúrate de que la URL sea correcta y que el servidor esté configurado para recibir POST en esta ruta.
-   return fetch('http://localhost:3000/api/v1/categories', {
+   return fetch('/api/v1/categories', {
        method: 'POST',
        headers: {
            'Content-Type': 'application/json',
@@ -15,7 +15,7 @@ export function sendCategoryToServer(categoryData) {
 }
 
 export function getCategoriesFromServer() {
-   return fetch('http://localhost:3000/api/v1/categories')
+   return fetch('/api/v1/categories')
    .then(response => response.json())
    .catch((error) => {
        console.error('Error:', error);
@@ -24,7 +24,7 @@ export function getCategoriesFromServer() {
 }
 
 export function deleteCategoryFromServer(id) {
-   return fetch(`http://localhost:3000/api/v1/categories/${id}`, {
+   return fetch(`/api/v1/categories/${id}`, {
        method: 'DELETE',
    })
    .then(response => {
