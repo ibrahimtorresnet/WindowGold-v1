@@ -1,5 +1,5 @@
 export const createUserFromAPI = async (user) => {
-  const dataFetchAPI = await fetch('http://localhost:3000/api/v1/users', {
+  const dataFetchAPI = await fetch('/api/v1/users', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
