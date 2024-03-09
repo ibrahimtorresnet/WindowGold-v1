@@ -30,7 +30,7 @@ form.addEventListener('submit', (event) => {
           } = response;
           if (message) {
             // Cambia la URL del navegador para redirigir al usuario
-            window.location.href = 'http://localhost:3000/escritorio/';
+            window.location.href = '/escritorio';
             return;
           }
           if (error) return alert(error)
