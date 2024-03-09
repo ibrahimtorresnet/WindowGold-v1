@@ -1,5 +1,5 @@
 export function sendCategoryToServer(marcaData) {
-   return fetch('http://localhost:3000/api/v1/marcas', {
+   return fetch('/api/v1/marcas', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
