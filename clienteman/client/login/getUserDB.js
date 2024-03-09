@@ -1,5 +1,5 @@
 const apiFetchUser = async () => {
-  const apiResult = await fetch('http://localhost:3000/api/v1/users');
+  const apiResult = await fetch('/api/v1/users');
 
   const getDataFromFetchAPI = await apiResult.json();
   return getDataFromFetchAPI;
