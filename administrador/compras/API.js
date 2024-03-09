@@ -1,5 +1,5 @@
 export function sendCompraToServer(compraData) {
-   return fetch('http://localhost:3000/api/v1/compras', {
+   return fetch('/api/v1/compras', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
