@@ -7,7 +7,7 @@ const apiFetchUser = async () => {
 
 //TODO: Update
 const datosValidos = async (identificadorDelUsuario, passwordInput) => {
-  const apiResult = await fetch(`http://localhost:3000/api/v1/users/${identificadorDelUsuario}`, {
+  const apiResult = await fetch(`/api/v1/users/${identificadorDelUsuario}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ const datosValidos = async (identificadorDelUsuario, passwordInput) => {
 
 //TODO: add
 const apiFetchOneUser = async (id) => {
-  const apiResult = await fetch(`http://localhost:3000/api/v1/users/${id}`);
+  const apiResult = await fetch(`/api/v1/users/${id}`);
 
   const getDataFromFetchAPI = await apiResult.json();
 
